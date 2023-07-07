@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "requests",
+  "info": {
+    "singularName": "request",
+    "pluralName": "requests",
+    "displayName": "request",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "project": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "method": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "path": {
+      "type": "string"
+    },
+    "ip_address": {
+      "type": "string"
+    },
+    "user_agent": {
+      "type": "string"
+    },
+    "local_created_at": {
+      "type": "string"
+    },
+    "platform_to_send_message": {
+      "type": "component",
+      "repeatable": true,
+      "component": "platform-to-send-message.platform-to-send-message"
+    },
+    "request_json": {
+      "type": "json"
+    },
+    "payload": {
+      "type": "json"
+    },
+    "username": {
+      "type": "string"
+    }
+  }
+}
