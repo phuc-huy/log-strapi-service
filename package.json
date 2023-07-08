@@ -7,7 +7,8 @@
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
-    "strapi": "strapi"
+    "deploy:dev": "yarn build && pm2 start yarn --name backend --interpreter bash -- run develop",
+    "deploy:prod": "yarn build && pm2 start server.js"
   },
   "devDependencies": {},
   "dependencies": {
