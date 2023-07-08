@@ -55,6 +55,12 @@
     },
     "local_created_at": {
       "type": "string"
+    },
+    "error_id": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
     }
   }
 }
