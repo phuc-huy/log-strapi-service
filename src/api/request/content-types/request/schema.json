@@ -36,11 +36,6 @@
     "local_created_at": {
       "type": "string"
     },
-    "platform_to_send_message": {
-      "type": "component",
-      "repeatable": true,
-      "component": "platform-to-send-message.platform-to-send-message"
-    },
     "request_json": {
       "type": "json"
     },
@@ -48,6 +43,9 @@
       "type": "json"
     },
     "username": {
+      "type": "string"
+    },
+    "platform_to_send_message": {
       "type": "string"
     }
   }
