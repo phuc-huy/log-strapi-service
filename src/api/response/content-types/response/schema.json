@@ -36,11 +36,6 @@
     "is_success": {
       "type": "boolean"
     },
-    "platform_to_send_message": {
-      "type": "component",
-      "repeatable": true,
-      "component": "platform-to-send-message.platform-to-send-message"
-    },
     "url": {
       "type": "string"
     },
@@ -60,6 +55,9 @@
       "type": "string"
     },
     "duration": {
+      "type": "string"
+    },
+    "platform_to_send_message": {
       "type": "string"
     }
   }
