@@ -11,7 +11,7 @@ ENV PATH /opt/node_modules/.bin:$PATH
 
 WORKDIR /opt/app
 COPY --chown=node:node . .
-RUN chown -R node:node /opt/app
+RUN chown 1000:1000 /opt/app
 USER node
 RUN ["yarn", "build"]
 EXPOSE 1337
