@@ -1,16 +1,20 @@
-ARG BASE_VERSION
-FROM strapi/base:${BASE_VERSION}
+FROM strapi/base
 
-ARG STRAPI_VERSION
-RUN yarn global add strapi@${STRAPI_VERSION}
+# Let WatchTower know to ignore this container for checking
+LABEL com.centurylinklabs.watchtower.enable="false"
 
-RUN mkdir /srv/app && chown 1000:1000 -R /srv/app
+WORKDIR /app
 
-WORKDIR /srv/app
+COPY ./package*.json ./
 
-VOLUME /srv/app
+RUN npm ci
 
-COPY docker-entrypoint.sh /usr/local/bin/
-ENTRYPOINT ["docker-entrypoint.sh"]
+COPY . .
 
-CMD ["strapi", "develop"]
+ENV NODE_ENV production
+
+RUN npm run build
+
+EXPOSE 1337
+
+CMD ["npm", "start"]
