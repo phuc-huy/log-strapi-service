@@ -10,7 +10,7 @@ RUN yarn config set network-timeout 600000 -g && yarn install
 ENV PATH /opt/node_modules/.bin:$PATH
 
 WORKDIR /opt/app
-COPY . .
+COPY --chown=node:node . .
 RUN chown -R node:node /opt/app
 USER node
 RUN ["yarn", "build"]
