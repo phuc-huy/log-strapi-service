@@ -59,6 +59,12 @@
     },
     "platform_to_send_message": {
       "type": "string"
+    },
+    "kind_error": {
+      "type": "string"
+    },
+    "payload": {
+      "type": "json"
     }
   }
 }
