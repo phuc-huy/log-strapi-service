@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "requests",
+  "collectionName": "client_errors",
   "info": {
-    "singularName": "request",
-    "pluralName": "requests",
-    "displayName": "Request",
+    "singularName": "client-error",
+    "pluralName": "client-errors",
+    "displayName": "Client-Error",
     "description": ""
   },
   "options": {
@@ -12,19 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "project": {
-      "type": "string"
-    },
-    "user_id": {
-      "type": "string"
-    },
-    "method": {
-      "type": "string"
-    },
-    "url": {
-      "type": "string"
-    },
-    "path": {
+    "domain": {
       "type": "string"
     },
     "ip_address": {
@@ -39,13 +27,10 @@
     "request_json": {
       "type": "json"
     },
-    "payload": {
-      "type": "json"
-    },
-    "username": {
+    "user_id": {
       "type": "string"
     },
-    "platform_to_send_message": {
+    "project": {
       "type": "string"
     }
   }
