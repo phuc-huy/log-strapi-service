@@ -32,6 +32,12 @@
     },
     "project": {
       "type": "string"
+    },
+    "payload": {
+      "type": "json"
+    },
+    "headers": {
+      "type": "json"
     }
   }
 }
