@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "ai_responses",
+  "collectionName": "service_responses",
   "info": {
-    "singularName": "ai-response",
-    "pluralName": "ai-responses",
-    "displayName": "Ai-Response",
+    "singularName": "service-response",
+    "pluralName": "service-responses",
+    "displayName": "Service-Response",
     "description": ""
   },
   "options": {
@@ -12,28 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
+    "project": {
+      "type": "string"
+    },
     "user_id": {
       "type": "string"
     },
     "topic": {
-      "type": "string"
-    },
-    "ai": {
-      "type": "string"
-    },
-    "ai_model": {
-      "type": "string"
-    },
-    "username": {
-      "type": "string"
-    },
-    "ip_address": {
-      "type": "string"
-    },
-    "local_created_at": {
-      "type": "string"
-    },
-    "project": {
       "type": "string"
     },
     "request_json": {
@@ -42,10 +27,19 @@
     "response_json": {
       "type": "json"
     },
-    "duration": {
+    "username": {
+      "type": "string"
+    },
+    "ip_address": {
       "type": "string"
     },
     "user_agent": {
+      "type": "string"
+    },
+    "local_created_at": {
+      "type": "string"
+    },
+    "duration": {
       "type": "string"
     },
     "payload": {
@@ -53,9 +47,6 @@
     },
     "body_json": {
       "type": "json"
-    },
-    "prompt": {
-      "type": "string"
     }
   }
 }
