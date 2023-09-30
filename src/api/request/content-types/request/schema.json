@@ -39,9 +39,6 @@
     "request_json": {
       "type": "json"
     },
-    "payload": {
-      "type": "json"
-    },
     "username": {
       "type": "string"
     },

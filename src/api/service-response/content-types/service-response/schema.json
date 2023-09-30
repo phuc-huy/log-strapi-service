@@ -42,9 +42,6 @@
     "duration": {
       "type": "string"
     },
-    "payload": {
-      "type": "json"
-    },
     "body_json": {
       "type": "json"
     },

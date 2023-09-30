@@ -62,9 +62,6 @@
     },
     "kind_error": {
       "type": "string"
-    },
-    "payload": {
-      "type": "json"
     }
   }
 }
