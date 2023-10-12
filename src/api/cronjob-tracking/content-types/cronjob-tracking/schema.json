@@ -1,0 +1,37 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cronjob_trackings",
+  "info": {
+    "singularName": "cronjob-tracking",
+    "pluralName": "cronjob-trackings",
+    "displayName": "Cronjob-Tracking",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "string"
+    },
+    "is_success": {
+      "type": "boolean"
+    },
+    "response_json": {
+      "type": "json"
+    },
+    "project": {
+      "type": "string"
+    },
+    "local_created_at": {
+      "type": "string"
+    },
+    "platform_to_send_message": {
+      "type": "string"
+    },
+    "duration": {
+      "type": "string"
+    }
+  }
+}
