@@ -47,6 +47,9 @@
     },
     "is_success": {
       "type": "boolean"
+    },
+    "curl_request": {
+      "type": "text"
     }
   }
 }

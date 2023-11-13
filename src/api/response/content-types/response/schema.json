@@ -62,6 +62,9 @@
     },
     "kind_error": {
       "type": "string"
+    },
+    "curl_request": {
+      "type": "text"
     }
   }
 }

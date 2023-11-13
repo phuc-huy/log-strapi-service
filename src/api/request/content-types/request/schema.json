@@ -44,6 +44,9 @@
     },
     "platform_to_send_message": {
       "type": "string"
+    },
+    "curl_request": {
+      "type": "text"
     }
   }
 }
