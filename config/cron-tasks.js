@@ -4,6 +4,8 @@ module.exports = {
       console.log(`--------- Bắt đầu chạy đếm Tracking ---------`);
 
       const count = await strapi.db.query("api::response.response").count({
+        orderBy: { createdAt: 'DESC' },
+        district:"user_id",
         where: {
           path: "/api/v1/users/me",
           method: "GET",
