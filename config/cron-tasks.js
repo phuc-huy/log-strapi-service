@@ -3,8 +3,7 @@ module.exports = {
     task: async ({ strapi }) => {
       console.log(`--------- Bắt đầu chạy đếm Tracking ---------`);
 
-      const count = await strapi.db
-        .connection
+      const count = await strapi.db.connection
         .from("responses")
         .orderBy("createdAt", "desc")
         .where({
@@ -14,7 +13,7 @@ module.exports = {
         })
         .select("user_id")
         .groupBy("user_id")
-        .count()
+        .count();
 
       console.log(count);
 
