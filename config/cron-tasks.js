@@ -3,15 +3,17 @@ module.exports = {
     task: async ({ strapi }) => {
       console.log(`--------- Bắt đầu chạy đếm Tracking ---------`);
 
-      const count = await strapi.db.query("api::response.response").count({
-        orderBy: { createdAt: 'DESC' },
-        where: {
+      const count = await strapi.db
+        .connection("api::response.response")
+        .orderBy("createdAt", "desc")
+        .where({
           path: "/api/v1/users/me",
           method: "GET",
           status_code: 200,
-        },
-        district:"user_id",
-      });
+        })
+        .select("user_id")
+        .groupBy('user_id')
+        .count();
 
       console.log(count);
 
