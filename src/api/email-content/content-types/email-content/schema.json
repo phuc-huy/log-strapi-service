@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_contents",
+  "info": {
+    "singularName": "email-content",
+    "pluralName": "email-contents",
+    "displayName": "Email-Content",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subject": {
+      "type": "string"
+    },
+    "from": {
+      "type": "string"
+    },
+    "html": {
+      "type": "text"
+    },
+    "to": {
+      "type": "text"
+    },
+    "text": {
+      "type": "text"
+    },
+    "project": {
+      "type": "string"
+    },
+    "topic": {
+      "type": "string"
+    },
+    "user_id": {
+      "type": "string"
+    },
+    "is_success": {
+      "type": "boolean"
+    },
+    "response_json": {
+      "type": "json"
+    },
+    "duration": {
+      "type": "string"
+    },
+    "local_created_at": {
+      "type": "string"
+    }
+  }
+}
